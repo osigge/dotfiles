@@ -1,0 +1,19 @@
+PATH=$PATH:~/.bin
+export PATH
+
+export GNUTERM='x11'
+
+# Make vim the default editor
+export EDITOR="coda"
+
+# Larger bash history (allow 32³ entries; default is 500)
+export HISTSIZE=32768
+export HISTFILESIZE=$HISTSIZE
+export HISTCONTROL=ignoreboth:erasedups
+export APPEND_HISTORY=1
+export PROMPT_COMMAND="history -a"
+export PAGER=most
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+export JAVA_HOME=$(/usr/libexec/java_home)
