@@ -7,6 +7,7 @@ brew upgrade
 brew tap homebrew/versions
 brew tap phinze/homebrew-cask
 
+brew install keychain
 brew install aspell
 brew install bash
 brew install brew-cask
@@ -74,6 +75,8 @@ brew cask install cornerstone
 brew cask install crashlytics
 brew cask install dash
 brew cask install xquartz
+brew cask install beamer
+brew cask install sizeup
 
 #brew cask install ioquake3
 #brew cask install minecraft
