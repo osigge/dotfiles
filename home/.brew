@@ -26,6 +26,7 @@ brew install makensis
 brew install ios-sim
 
 brew install node
+brew install npm
 brew install phantomjs
 brew install qt
 brew install sqlite
