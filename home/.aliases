@@ -19,6 +19,12 @@ alias gcb='git checkout -b'
 alias gpf='git pfush'
 alias gpp='git push && git pull-request'
 
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache"
+
+# Undo a `git push`
+alias undopush="git push -f origin HEAD^:master"
+
 alias be='bundle exec'
 alias ber='be rake'
 alias rspec='be rspec'
@@ -29,7 +35,6 @@ alias mark='/Applications/Marked.app/Contents/Resources/mark'
 alias pong='ping -a -i 5' 
 alias deploy_production='CHEF_ORG=hlpstr cap production deploy:migrations deploy:cleanup'
 alias deploy_staging='CHEF_ORG=hlpstr DEPLOY_BRANCH=`git symbolic-ref HEAD 2>/dev/null | cut -d "/" -f 3` cap staging deploy:migrations deploy:cleanup'
-alias download='aria2c -x 8'
 alias ghost="sudo ghost import ~/.hosts"
 alias aspell='aspell -d en -c'
 
